@@ -92,24 +92,9 @@ fun JurosScreen() {
                         label = "Valor do invetimento",
                         modifier = Modifier.fillMaxWidth(),
                         placeHolder = "Quanto deseja investir",
-                        keyboardType = KeyboardType.Number
+                        keyboardType = KeyboardType.Number,
+                        onValueChange = {capital = it}
                     )
-//                    OutlinedTextField(
-//                        value = capital,
-//                        onValueChange = { capital = it },
-//                        modifier = Modifier
-//                            .fillMaxWidth()
-//                            .padding(top = 16.dp),
-//                        placeholder = {
-//                            Text(text = "Quanto deseja investir?")
-//                        },
-//                        label = {
-//                            Text(text = "Valor do investimento")
-//                        },
-//                        keyboardOptions = KeyboardOptions(
-//                            keyboardType = KeyboardType.Decimal
-//                        )
-//                    )
                     OutlinedTextField(
                         value = taxa,
                         onValueChange = { taxa = it },

@@ -13,11 +13,12 @@ fun CaixaDeEntrada(
     label: String,
     modifier: Modifier,
     placeHolder: String,
-    keyboardType: KeyboardType
+    keyboardType: KeyboardType,
+    onValueChange: (String) -> Unit
     ) {
     OutlinedTextField(
         value = value,
-        onValueChange = {},
+        onValueChange = onValueChange,
         modifier = modifier,
         label = { Text(text = label)},
         placeholder = { Text(text = placeHolder)},
